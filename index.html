@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>周末线上学习督查优化方案</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary': '#4f46e5',
+            'secondary': '#7c3aed',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    }
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .icon-container {
+      background: white;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .gradient-border {
+      position: relative;
+      border-radius: 1.5rem;
+      overflow: hidden;
+    }
+    .gradient-border::before {
+      content: '';
+      position: absolute;
+      top: -2px; left: -2px; right: -2px; bottom: -2px;
+      background: linear-gradient(45deg, #4f46e5, #7c3aed, #ec4899, #f59e0b);
+      z-index: -1;
+      border-radius: 1.75rem;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 py-8 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-4xl mx-auto">
+    <!-- Header with Lightbulb Icon -->
+    <header class="text-center mb-12">
+      <div class="inline-block p-4 bg-indigo-100 rounded-2xl mb-6 mx-auto">
+        <i-lucide name="lightbulb" class="w-16 h-16 text-indigo-700"></i-lucide>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
+        周末线上学习督查优化方案
+      </h1>
+      <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+        一套「规划-互动-反馈」三位一体的深入跟进办法，变被动打卡为主动赋能
+      </p>
+    </header>
+
+    <!-- Role Transformation with Shield Icon -->
+    <div class="text-center mb-16">
+      <div class="inline-block bg-gradient-to-r from-indigo-600 to-purple-700 text-white px-6 py-4 rounded-2xl shadow-lg mb-6 mx-auto">
+        <i-lucide name="shield-check" class="w-8 h-8 inline-block mr-3"></i-lucide>
+        <span class="font-bold text-xl">班主任角色转型</span>
+      </div>
+      <div class="mt-6 flex flex-wrap justify-center gap-6">
+        <div class="bg-white px-8 py-4 rounded-2xl shadow-md border-2 border-indigo-100 card-hover">
+          <span class="text-indigo-700 font-bold text-2xl">规划师</span>
+        </div>
+        <div class="bg-white px-8 py-4 rounded-2xl shadow-md border-2 border-indigo-100 card-hover">
+          <span class="text-indigo-700 font-bold text-2xl">陪跑员</span>
+        </div>
+        <div class="bg-white px-8 py-4 rounded-2xl shadow-md border-2 border-indigo-100 card-hover">
+          <span class="text-indigo-700 font-bold text-2xl">诊断师</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content-container" class="space-y-8 mb-16">
+      <!-- Section 1 -->
+      <div class="gradient-border bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+        <div class="p-6 md:p-8">
+          <div class="flex items-start mb-5">
+            <div class="icon-container p-3 rounded-xl mr-4 mt-1 flex-shrink-0">
+              <i-lucide name="target" class="w-8 h-8 text-indigo-600"></i-lucide>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-slate-800">核心理念</h2>
+            </div>
+          </div>
+          <ul class="space-y-3 pl-4 border-l-2 border-indigo-200 ml-11">
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 从「检查在不在线」转变为「关注学没学会」
+            </li>
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 从「单向要求」转变为「双向互动」
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="gradient-border bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+        <div class="p-6 md:p-8">
+          <div class="flex items-start mb-5">
+            <div class="icon-container p-3 rounded-xl mr-4 mt-1 flex-shrink-0">
+              <i-lucide name="list-todo" class="w-8 h-8 text-blue-600"></i-lucide>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-slate-800">第一部分：前置规划</h2>
+              <p class="text-lg text-indigo-700 font-medium mt-1">变「模糊任务」为「清晰契约」</p>
+            </div>
+          </div>
+          <ul class="space-y-3 pl-4 border-l-2 border-indigo-200 ml-11">
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 个性化清单协商：与每位重点生进行3-5分钟简短沟通，共同确定「周末学习目标清单」
+            </li>
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 提供「学习工具包」：精选例题解析链接、知识梳理微课视频、高质量自测题
+            </li>
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 明确提交与沟通方式：约定检查点形式和时间（如周日下午4点前提交错题重做步骤和解题思路语音）
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="gradient-border bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+        <div class="p-6 md:p-8">
+          <div class="flex items-start mb-5">
+            <div class="icon-container p-3 rounded-xl mr-4 mt-1 flex-shrink-0">
+              <i-lucide name="message-circle" class="w-8 h-8 text-emerald-600"></i-lucide>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-slate-800">第二部分：过程互动</h2>
+              <p class="text-lg text-indigo-700 font-medium mt-1">变「沉默监控」为「动态支持」</p>
+            </div>
+          </div>
+          <ul class="space-y-3 pl-4 border-l-2 border-indigo-200 ml-11">
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 「签到」升级为「进度快照」：让学生用一两句话汇报「已完成…，正在攻克…，遇到的困难是…」
+            </li>
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 启动「专家门诊」答疑时段：固定1-2小时线上答疑窗口（如周日下午3-5点）
+            </li>
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 进行「抽样诊断」式沟通：每周随机选取2-3位重点生，进行5分钟视频连线实时指导
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="gradient-border bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+        <div class="p-6 md:p-8">
+          <div class="flex items-start mb-5">
+            <div class="icon-container p-3 rounded-xl mr-4 mt-1 flex-shrink-0">
+              <i-lucide name="check-circle" class="w-8 h-8 text-amber-600"></i-lucide>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-slate-800">第三部分：成果反馈</h2>
+              <p class="text-lg text-indigo-700 font-medium mt-1">变「任务终点」为「学习新起点」</p>
+            </div>
+          </div>
+          <ul class="space-y-3 pl-4 border-l-2 border-indigo-200 ml-11">
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 收阅并点评「学习成果包」：目标清单完成情况自评 + 核心成果（错题本、试卷、录音）
+            </li>
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 周一晨会「微分享」：邀请学习安排得当的学生做2分钟经验分享
+            </li>
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 更新个人追踪档案：将周末学习状态、问题、沟通记录更新到学生个人档案
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 5 -->
+      <div class="gradient-border bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+        <div class="p-6 md:p-8">
+          <div class="flex items-start mb-5">
+            <div class="icon-container p-3 rounded-xl mr-4 mt-1 flex-shrink-0">
+              <i-lucide name="users" class="w-8 h-8 text-rose-600"></i-lucide>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-slate-800">对家长的协同建议</h2>
+            </div>
+          </div>
+          <ul class="space-y-3 pl-4 border-l-2 border-indigo-200 ml-11">
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 明确角色定位：家长主要提供「环境支持」（安静空间）和「情绪支持」（多鼓励、少斥责）
+            </li>
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 提供观察清单：不经意间观察孩子是否按计划进行，是否长时间陷入烦躁，发现异常私下沟通
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 6 -->
+      <div class="gradient-border bg-gradient-to-br from-violet-50 to-fuchsia-50 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+        <div class="p-6 md:p-8">
+          <div class="flex items-start mb-5">
+            <div class="icon-container p-3 rounded-xl mr-4 mt-1 flex-shrink-0">
+              <i-lucide name="clock" class="w-8 h-8 text-violet-600"></i-lucide>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-slate-800">高效督查流程</h2>
+            </div>
+          </div>
+          <ul class="space-y-3 pl-4 border-l-2 border-indigo-200 ml-11">
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 周五：师生共商个性化目标清单
+            </li>
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 周六：学生按计划学习，傍晚提交「进度快照」
+            </li>
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 周日：参与集中答疑或接受抽样视频指导
+            </li>
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 周日晚：提交成果包，班主任给予个性化反馈
+            </li>
+            <li class="text-slate-700 text-lg leading-relaxed">
+              <span class="font-medium text-indigo-800">·</span> 周一：问题带入新一周学习
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary Card -->
+    <div class="bg-gradient-to-r from-indigo-600 to-purple-800 rounded-3xl p-8 text-white shadow-2xl mb-16">
+      <div class="flex items-center mb-6">
+        <i-lucide name="arrow-right-circle" class="w-10 h-10 mr-4"></i-lucide>
+        <h2 class="text-2xl font-bold">高效周末督查核心流程</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-center">
+        <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl card-hover">
+          <div class="text-4xl font-bold mb-2">1</div>
+          <div class="font-medium">周五规划</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl card-hover">
+          <div class="text-4xl font-bold mb-2">2</div>
+          <div class="font-medium">周六启动</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl card-hover">
+          <div class="text-4xl font-bold mb-2">3</div>
+          <div class="font-medium">周日深化</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl card-hover">
+          <div class="text-4xl font-bold mb-2">4</div>
+          <div class="font-medium">周日闭环</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl card-hover">
+          <div class="text-4xl font-bold mb-2">5</div>
+          <div class="font-medium">周一延续</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 border-t border-slate-200">
+      <div class="inline-flex items-center bg-indigo-50 text-indigo-700 px-5 py-3 rounded-full mb-4 mx-auto">
+        <i-lucide name="file-text" class="w-5 h-5 mr-2"></i-lucide>
+        <span class="font-medium">让教育更有温度 · 让学习更有深度</span>
+      </div>
+      <p class="text-slate-500">
+        周末线上督查优化方案 | 专为教育工作者设计
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    // Initialize lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
